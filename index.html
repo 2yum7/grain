@@ -6,7 +6,6 @@
     <title>Grain — Habit Tracker</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap");
-
       *,
       *::before,
       *::after {
@@ -14,7 +13,6 @@
         margin: 0;
         padding: 0;
       }
-
       :root {
         --green-light: #b8e6c8;
         --green-mid: #5bbf7a;
@@ -25,7 +23,6 @@
         --text-secondary: #888888;
         --border: #e0e0e0;
       }
-
       body {
         background: var(--bg);
         color: var(--text-primary);
@@ -34,7 +31,6 @@
         line-height: 1.7;
         min-height: 100vh;
       }
-
       nav {
         padding: 24px;
         display: flex;
@@ -43,39 +39,32 @@
         max-width: 960px;
         margin: 0 auto;
       }
-
       .logo {
         display: inline-flex;
         align-items: center;
         gap: 10px;
         text-decoration: none;
       }
-
       .logo-dot {
         width: 28px;
         height: 28px;
         border-radius: 8px;
-        background: var(--green-dark);
+        object-fit: contain;
       }
-
       .logo-text {
         font-family: "DM Serif Display", serif;
         font-size: 20px;
         color: var(--text-primary);
       }
-
       nav a.nav-link {
         font-size: 13px;
         color: var(--text-secondary);
         text-decoration: none;
         font-weight: 400;
       }
-
       nav a.nav-link:hover {
         color: var(--text-primary);
       }
-
-      /* Hero */
       .hero {
         max-width: 960px;
         margin: 0 auto;
@@ -85,7 +74,6 @@
         gap: 64px;
         align-items: center;
       }
-
       @media (max-width: 640px) {
         .hero {
           grid-template-columns: 1fr;
@@ -96,7 +84,6 @@
           order: -1;
         }
       }
-
       .hero-copy h1 {
         font-family: "DM Serif Display", serif;
         font-size: clamp(36px, 5vw, 52px);
@@ -104,12 +91,10 @@
         line-height: 1.15;
         margin-bottom: 20px;
       }
-
       .hero-copy h1 em {
         font-style: normal;
         color: var(--green-dark);
       }
-
       .hero-copy p {
         font-size: 16px;
         color: var(--text-secondary);
@@ -117,7 +102,6 @@
         margin-bottom: 32px;
         max-width: 360px;
       }
-
       .cta {
         display: inline-flex;
         align-items: center;
@@ -131,11 +115,9 @@
         border-radius: 100px;
         transition: opacity 0.15s;
       }
-
       .cta:hover {
         opacity: 0.85;
       }
-
       .cta-sub {
         display: block;
         font-size: 12px;
@@ -143,13 +125,10 @@
         margin-top: 12px;
         font-weight: 300;
       }
-
-      /* Phone mockup */
       .phone-mockup {
         display: flex;
         justify-content: center;
       }
-
       .phone {
         width: 220px;
         background: var(--card);
@@ -158,24 +137,20 @@
         padding: 20px 14px;
         box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
       }
-
       .phone-date {
         text-align: center;
         margin-bottom: 20px;
       }
-
       .phone-date p:first-child {
         font-family: "DM Serif Display", serif;
         font-size: 20px;
         font-weight: 400;
       }
-
       .phone-date p:last-child {
         font-size: 11px;
         color: var(--text-secondary);
         font-weight: 300;
       }
-
       .tile-full {
         height: 72px;
         border-radius: 14px;
@@ -188,14 +163,12 @@
         margin-bottom: 8px;
         font-weight: 400;
       }
-
       .tile-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8px;
         margin-bottom: 8px;
       }
-
       .tile {
         height: 72px;
         border-radius: 14px;
@@ -205,7 +178,6 @@
         font-size: 12px;
         font-weight: 400;
       }
-
       .tile.mid {
         background: var(--green-dark);
         color: var(--green-light);
@@ -219,14 +191,12 @@
         color: var(--text-secondary);
         border: 0.5px solid var(--border);
       }
-
       .phone-legend {
         display: flex;
         justify-content: center;
         gap: 10px;
         margin-top: 12px;
       }
-
       .legend-item {
         display: flex;
         align-items: center;
@@ -234,33 +204,27 @@
         font-size: 10px;
         color: var(--text-secondary);
       }
-
       .legend-dot {
         width: 8px;
         height: 8px;
         border-radius: 50%;
       }
-
-      /* Features */
       .features {
         max-width: 960px;
         margin: 0 auto;
         padding: 0 24px 80px;
       }
-
       .features-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 12px;
       }
-
       .feature-card {
         background: var(--card);
         border: 0.5px solid var(--border);
         border-radius: 16px;
         padding: 24px;
       }
-
       .feature-icon {
         width: 36px;
         height: 36px;
@@ -271,26 +235,21 @@
         align-items: center;
         justify-content: center;
       }
-
       .feature-icon svg {
         width: 18px;
         height: 18px;
       }
-
       .feature-card h3 {
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 6px;
       }
-
       .feature-card p {
         font-size: 13px;
         color: var(--text-secondary);
         font-weight: 300;
         line-height: 1.6;
       }
-
-      /* Footer */
       footer {
         border-top: 0.5px solid var(--border);
         padding: 32px 24px;
@@ -302,7 +261,6 @@
         flex-wrap: wrap;
         gap: 12px;
       }
-
       footer p {
         font-size: 12px;
         color: var(--text-secondary);
@@ -320,13 +278,12 @@
   </head>
   <body>
     <nav>
-      <a href="/" class="logo">
-        <img src="/src/logo.png" alt="Grain logo" class="logo-dot" />
+      <a href="./" class="logo">
+        <img src="logo.png" alt="Grain" class="logo-dot">
         <span class="logo-text">Grain</span>
       </a>
-      <a href="/privacy" class="nav-link">Privacy</a>
+      <a href="privacy/" class="nav-link">Privacy</a>
     </nav>
-
     <section class="hero">
       <div class="hero-copy">
         <h1>Tap. Stack.<br /><em>Build your life.</em></h1>
@@ -351,7 +308,6 @@
         </a>
         <span class="cta-sub">Free · iOS only</span>
       </div>
-
       <div class="phone-mockup">
         <div class="phone">
           <div class="phone-date">
@@ -384,7 +340,6 @@
         </div>
       </div>
     </section>
-
     <section class="features">
       <div class="features-grid">
         <div class="feature-card">
@@ -435,26 +390,11 @@
           <h3>Streak tracking</h3>
           <p>See how far your consistency has taken you, week by week.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#1E7A3E"
-              stroke-width="2"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-          </div>
-          <h3>Private by default</h3>
-          <p>No account needed. All data stays on your device.</p>
-        </div>
       </div>
     </section>
-
     <footer>
       <p>© 2026 Grain. Made with intention.</p>
-      <a href="/privacy">Privacy Policy</a>
+      <a href="privacy/">Privacy Policy</a>
     </footer>
   </body>
 </html>
