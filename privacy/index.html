@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy — Grain</title>
+    <meta
+      name="description"
+      content="Grain's privacy policy. We don't collect personal data. Everything stays on your device."
+    />
+    <link rel="canonical" href="https://2yum7.github.io/grain/privacy/" />
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://2yum7.github.io/grain/privacy/" />
+    <meta property="og:title" content="Privacy Policy — Grain" />
+    <meta
+      property="og:description"
+      content="Grain doesn't collect personal data. Everything stays on your device."
+    />
+    <meta
+      property="og:image"
+      content="https://2yum7.github.io/grain/assets/images/logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Privacy Policy — Grain" />
+    <meta
+      name="twitter:description"
+      content="Grain doesn't collect personal data. Everything stays on your device."
+    />
+    <meta
+      name="twitter:image"
+      content="https://2yum7.github.io/grain/assets/images/logo.png"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap");
 
@@ -41,12 +68,38 @@
         margin: 0 auto;
       }
 
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+      }
+
       .logo {
         display: inline-flex;
         align-items: center;
         gap: 10px;
         text-decoration: none;
-        margin-bottom: 48px;
+      }
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--green-dark);
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 9px 18px;
+        border-radius: 100px;
+        border-bottom: none;
+        transition: opacity 0.15s;
+      }
+
+      .nav-cta:hover {
+        opacity: 0.85;
+        border-bottom: none;
       }
 
       .logo-dot {
@@ -184,10 +237,17 @@
   </head>
   <body>
     <header>
-      <a href="/" class="logo">
-        <img src="../logo.png" alt="Grain" class="logo-dot" />
-        <span class="logo-text">Grain</span>
-      </a>
+      <div class="header-top">
+        <a href="../" class="logo">
+          <img src="../assets/images/logo.png" alt="Grain" class="logo-dot" />
+          <span class="logo-text">Grain</span>
+        </a>
+        <a
+          href="https://apps.apple.com/us/app/grain-habit-tracker/id6761901795"
+          class="nav-cta"
+          >Download</a
+        >
+      </div>
       <h1>Privacy Policy</h1>
       <p class="meta">Effective date: April 2026</p>
     </header>
@@ -225,6 +285,36 @@
       </div>
 
       <div class="card">
+        <h2>No account, no sync</h2>
+        <p>
+          Grain does not require an account. There is no sign-up, no login, and
+          no remote sync. Nothing about how you use Grain leaves your device.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Analytics</h2>
+        <p>
+          Grain does not use any analytics, telemetry, or tracking SDKs. We do
+          not measure how often you open the app or which habits you tap.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Third-party services</h2>
+        <p>Grain does not integrate with any third-party services.</p>
+      </div>
+
+      <div class="card">
+        <h2>Your rights</h2>
+        <p>
+          You own your data. Because everything is stored locally, you have full
+          control: export it manually, edit it, or remove it at any time.
+          Uninstalling Grain deletes all of your data permanently.
+        </p>
+      </div>
+
+      <div class="card">
         <h2>Children's privacy</h2>
         <p>
           Grain does not knowingly collect any information from children under
@@ -245,7 +335,7 @@
       <div class="card">
         <h2>Contact</h2>
         <p>
-          Questions about this policy? Reach us at
+          Questions about this policy? <br \ />Reach us at
           <a href="mailto:hello@2yum7.dev">2yumseven@gmail.com</a>
         </p>
       </div>
