@@ -1,1 +1,12 @@
-<img width="982" height="779" alt="image" src="https://github.com/user-attachments/assets/5a250c7f-a944-4bf2-823f-122662fe36e3" />
+# Grain
+
+The simplest habit tracker. 
+
+Just tap once a day to mark progress, and watch grains stack into something real.
+
+
+- App Store: https://apps.apple.com/us/app/grain-habit-tracker/id6761901795
+
+
+![alt text](image-1.png)
+![alt text](image-2.png)
